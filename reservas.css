@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-reservas {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 80vh !important; /* Aumentei a altura para ter mais espaço */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagem1.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-reservas h1 {
+    margin-bottom: 50px !important; /* Empurra tudo que estiver abaixo do título */
+}
+
+.botao-whatsapp {
+    margin-top: 40px !important; /* Força o botão a descer */
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+}
+.container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Botão estilo WhatsApp para conversão */
+.botao-whatsapp {
+    margin-top: 50px; /* Empurra o botão para longe do que estiver em cima dele */
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+/* Lista de benefícios */
+.detalhes {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.detalhes h2 {
+    margin-bottom: 30px;
+    color: #2d5a27;
+}
+
+.detalhes ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.detalhes li {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 250px;
+}
+.detalhes ul {
+    display: flex;
+    flex-wrap: wrap; /* Faz quebrar a linha se não couber no celular */
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+}
+
+.detalhes li {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.fotos-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Não deixa a foto esticar */
+    border-radius: 8px;
+}
+/* Container da galeria */
+.galeria {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* O código que faz a mágica das 2 colunas */
+.fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas iguais */
+    gap: 15px; /* Espaço entre as fotos */
+    max-width: 1000px; /* Largura máxima para não esticar no PC */
+    margin: 0 auto; /* Centraliza a galeria na página */
+}
+
+/* Estilo das imagens */
+.fotos-grid img {
+    width: 100%;
+    height: 300px; /* Altura fixa para ficarem todas alinhadas */
+    object-fit: cover; /* Faz a foto preencher o espaço sem ficar amassada */
+    border-radius: 10px; /* Cantinhos arredondados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Se alguém abrir no celular, vira uma embaixo da outra */
+@media (max-width: 600px) {
+    .fotos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.secao-mapa {
+    text-align: center; /* Centraliza o texto e o botão */
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.botao-mapa {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #4285F4; /* Azul do Google */
+    color: white !important;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
+    transition: transform 0.2s;
+}
+
+.botao-mapa:hover {
+    transform: scale(1.05); /* Dá um leve aumento ao passar o mouse */
+    background-color: #3367D6;
+}
+.mapa-container {
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.localizacao h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: sans-serif;
+}

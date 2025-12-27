@@ -1,0 +1,214 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+/* Topo do Site */
+.hero-agro {
+    height: 60vh;
+    background: url('C:\Imagens\imagem6.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-reserva {
+    background-color: #2e7d32; /* Verde Agro */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: center;
+}
+
+/* Grade de Vantagens */
+.vantagens {
+    background: #222;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.grid-vantagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Lista de Casas */
+.lista-casas {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.lista-casas h2 { margin-bottom: 30px; text-align: center; }
+
+.card-casa {
+    display: flex;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card-casa img { width: 40%; object-fit: cover; }
+
+.info-casa { padding: 20px; }
+
+.tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* Ajuste Celular */
+@media (max-width: 600px) {
+    .card-casa { flex-direction: column; }
+    .card-casa img { width: 100%; height: 200px; }
+}
+.eventos-anteriores {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.fotos-eventos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.foto-item img {
+    width: 300%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #fff;
+}
+
+.foto-item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+/* Zera o estilo padrão */
+* { 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    box-sizing: border-box !important; 
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* AJUSTE DAS FOTOS DOS CARDS (Casas) */
+.card-casa {
+    display: flex !important;
+    flex-direction: row !important;
+    max-width: 900px !important;
+    margin: 30px auto !important;
+    background: white !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    border: 1px solid #ccc !important;
+}
+
+.card-casa img {
+    width: 300px !important;  /* Força a largura */
+    height: 250px !important; /* Força a altura */
+    object-fit: cover !important; /* Corta o excesso */
+    display: block !important;
+}
+
+/* AJUSTE DAS FOTOS DOS EVENTOS (Parte de baixo) */
+.fotos-eventos {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* Força 2 colunas */
+    gap: 20px !important;
+    max-width: 900px !important;
+    margin: 20px auto !important;
+}
+
+.foto-item img {
+    width: 100% !important;
+    height: 250px !important; /* Padroniza todas as fotos de evento */
+    object-fit: cover !important;
+    border-radius: 8px !important;
+}
+
+/* Ajuste para celular */
+@media (max-width: 700px) {
+    .card-casa { flex-direction: column !important; }
+    .card-casa img { width: 100% !important; }
+    .fotos-eventos { grid-template-columns: 1fr !important; }
+}
+.vantagens {
+    width: 100%;
+    background-color: #222; /* Cor de fundo atual */
+    padding: 30px 0;
+    display: flex;
+    justify-content: center; /* Centraliza o bloco inteiro na tela */
+}
+
+/* Centralizar as Vantagens (Frases com ícones) */
+.grid-vantagens {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important; /* Centro horizontal */
+    align-items: center !important;     /* Centro vertical */
+    flex-wrap: wrap !important;        /* Para não amontoar no celular */
+    gap: 30px !important;              /* Espaço entre elas */
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* Centralizar o Título "Nossas Opções" */
+.lista-casas {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important; /* Força o centro de tudo que é texto dentro */
+}
+
+.lista-casas h2 {
+    display: inline-block !important; /* Faz ele aceitar o centro do pai */
+    width: 100% !important;
+    margin: 60px 0 40px 0 !important;
+    text-align: center !important;
+    left: 0 !important;
+    position: relative !important;
+}
+
+/* Ajuste do Card para ele não centralizar o texto interno, só o card na página */
+.card-casa {
+    margin: 20px auto !important; /* O 'auto' nas laterais centraliza o card todo */
+    text-align: left !important;  /* Mantém o texto da casa alinhado à esquerda */
+    display: flex !important;
+    max-width: 900px !important;  /* Largura do card */
+}

@@ -1,0 +1,157 @@
+/* 1. RESET - Sempre no topo para limpar margens do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. ESTILOS GLOBAIS - Ajustado para o fundo ser sempre escuro */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #000; /* Mudamos de cinza para PRETO */
+    overflow-x: hidden;
+}
+
+ .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Imagens/imagem12.jfif');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #000; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-title {
+    text-shadow: 4px 4px 15px rgba(219, 209, 209, 0.9); /* Sombra mais profunda e difusa */
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    
+    /* A MÁGICA ESTÁ AQUI: */
+    background-color: #000; /* Fundo preto sólido para cobrir o 'OFICIAL' */
+    padding: 40px 0 80px 0; /* Dá altura para a faixa preta */
+    margin-top: auto; /* Empurra essa faixa lá para o fundo do site */
+    border-top: 1px solid #111; /* Uma linha quase invisível para acabamento */
+}
+
+.hero-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description-bar {
+    background-color: #000;
+    color: #ccc;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    border-top: 1px solid #333;
+}
+
+/* Estilo para a frase que agora está fora da imagem */
+.info-bar {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #333333;
+}
+
+/* 4. CONTEÚDO DO TEXTO - Ajuste das margens para não cobrir a boca do peixe */
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    /* Aumentamos para 420px para garantir que o texto fique abaixo do escudo central */
+    margin-top: 420px; 
+    margin-bottom: 40px;
+    color: #f0f0f0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+}
+
+/* 5. BOTÕES */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn.primary { background-color: #007bff; color: white; }
+.btn.secondary {
+    border: 2px solid white;
+    color: white;
+    background: rgba(255, 255, 255, 0.1); /* Um fundo bem transparente */
+    backdrop-filter: blur(5px); /* Efeito de vidro fosco */
+}
+.btn.secondary:hover { background: white; color: #333; }
+
+/* Melhore o bloco .ad-container que você já tem */
+.ad-container {
+    background-color: #fff3cd;
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 1px solid #ffeeba; /* Uma bordinha suave */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra para dar profundidade */
+}
+
+.ad-image { 
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 15px; 
+    border-radius: 4px; /* Arredonda levemente os cantos do GIF */
+}
+
+/* Ajuste para telas menores (Celulares) */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem; /* Diminui o título no celular */
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Botões um em cima do outro no celular */
+    }
+}
+.highlight {
+    color: #007bff; /* O mesmo azul do seu botão principal */
+}
+.btn:hover {
+    transform: scale(1.05); /* O botão cresce levemente */
+    filter: brightness(1.2); /* O botão brilha um pouco */
+    transition: 0.3s; /* Deixa o movimento suave */
+}
