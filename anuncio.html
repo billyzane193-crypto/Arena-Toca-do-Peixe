@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas - Arena Toca do Peixe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000; /* Fundo preto como na imagem */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .promo-container {
+            background-color: white;
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .offer-card {
+            border: 2px solid #2e7d32;
+            background-color: #f1f8e9;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        h2 { color: #333; margin-bottom: 5px; }
+        p { color: #666; margin: 10px 0; }
+
+        .price {
+            font-size: 3rem;
+            color: #2e7d32;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        /* Ajuste dos Botões para não atrapalhar a frase */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+            margin-top: 15px; /* Espaço para não bater no texto */
+        }
+
+        .btn:hover { transform: scale(1.05); }
+
+        .primary {
+            background-color: #007bff; /* Azul do WhatsApp/Reserva */
+            color: white;
+        }
+
+        .secondary {
+            background-color: #fbc02d; /* Amarelo Saber Mais */
+            color: #333;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="promo-container">
+        
+        <div class="offer-card">
+            <h2>Pacote Day Use + Almoço</h2>
+            <p>Venha relaxar na nossa chácara com tudo incluso.</p>
+            <div class="price">R$ 89,90</div>
+            <p><small>*Válido para reservas feitas até sexta-feira.</small></p>
+            <a href="https://wa.me/554399986625" class="btn primary">Reservar via WhatsApp</a>
+        </div>
+
+        <div class="offer-card">
+            <h2>Consultoria Agro Estratégica</h2>
+            <p>Leve sua equipe para um treinamento focado em resultados.</p>
+            <p><strong>15% de Desconto para grupos acima de 10 pessoas.</strong></p>
+            <a href="equipes.html" class="btn secondary">Saber Mais</a>
+        </div>
+
+        <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    </div>
+
+</body>
+</html>
